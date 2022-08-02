@@ -11,7 +11,6 @@ const ProfilePage= () =>{
     return(
         <div>
            
-           
             <div className="box-profile-page">
                 <div className="user-profile">
                     <div className="profile-picture">
@@ -24,7 +23,6 @@ const ProfilePage= () =>{
                         <h2>Height : <span>{profileData.height} cm</span></h2>
                         <h2>Weight : <span>{profileData.weight} kg</span></h2>
                         <h2>BMI : <span>{profileData.bmi}</span></h2>
-                    
                     </div>
                     
                 </div>
