@@ -1,13 +1,14 @@
 import { useState } from 'react'
-
+import ProfilePage from './components/ProfilePage/ProfilePage'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+ 
 
   return (
     <div className="App">
-     test tetst
+      <ProfilePage />
+    
     </div>
   )
 }
