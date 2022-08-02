@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import ProfilePage from './components/ProfilePage/ProfilePage'
+import Navbar from './components/Navbar/Navbar'
 import './App.css'
 
 function App() {
