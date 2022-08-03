@@ -3,6 +3,7 @@ import "./ProfilePage.css"
 import { useState } from "react";
 import MyActivites from "../MyActivites/MyActivities";
 import NavbarMockup from "../NavbarMockup/NavbarMockup";
+import Navbar from "../Navbar/Navbar";
 
 const ProfilePage= () =>{
 
@@ -10,7 +11,9 @@ const ProfilePage= () =>{
     console.log(profileData)
     return(
         <div>
-           
+           <div className="navbar">
+                <Navbar/>
+           </div>
             <div className="box-profile-page">
                 <div className="user-profile">
                     <div className="profile-picture">
