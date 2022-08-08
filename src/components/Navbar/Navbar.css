@@ -8,12 +8,17 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
-    max-width: 100%;
+    
     height: 100%;
+<<<<<<< HEAD
     height: 7rem;
+=======
+    /* height: 8rem; */
+>>>>>>> 7ab5fe95842f1bc353b3e794928cafba2fecfb1c
     max-height: 100%;
     background-color: #46469C;
 }
+
 
 .Nav-mobile {
     display: none;
@@ -25,7 +30,8 @@
     display: flex;
     justify-content: space-around;
     gap: 7rem;
-}
+
+
 
 .Nav-content1 a:hover {
     cursor: pointer;
@@ -38,11 +44,16 @@
     height: 5rem;
 }
 
+
 .Nav-content1 li {
     list-style: none;
     justify-content: center;
     align-items: center;
     margin: auto auto;
+
+}
+.Nav-content .logo {
+    padding-left:50px;
 }
 
 .Nav-content1 li {
@@ -56,13 +67,16 @@
 
 .login-name {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-around; 
     align-items: center;
+
     padding-top: 3rem;
     padding-right: 0.25rem;
     width: 20%;
     height: 5rem;
+
     gap: 0.5rem;
+    
 }
 
 .login-name button {
@@ -71,10 +85,12 @@
     text-align: center;
     width: 6rem;
     height: 3rem;
+    padding: 10px 20px 10px 20px;
 }
 
 /* ==================== MEDIA QUERY ================== */
 
+<<<<<<< HEAD
 @media screen and (max-width :986px) {
     .Nav-content1 {
         display: none;
@@ -209,6 +225,8 @@
 }
 
 /* ==================== MEDIA QUERY ================== */
+=======
+>>>>>>> 7ab5fe95842f1bc353b3e794928cafba2fecfb1c
 
 @media screen and (max-width :768px) {
     .Nav-content1 {
@@ -298,6 +316,7 @@
         padding-top: 1.3rem;
         max-width: 100%;
     }
+<<<<<<< HEAD
 
     .login-name-mobile button {
         border-radius: 2rem;
@@ -306,5 +325,8 @@
     .login-name-mobile button a {
         text-decoration: none;
     }
+=======
+  
+>>>>>>> 7ab5fe95842f1bc353b3e794928cafba2fecfb1c
 
 }
