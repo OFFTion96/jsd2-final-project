@@ -1,10 +1,10 @@
-*{
-    margin:0;
+* {
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
+}
 
-.Nav-content {
+.Nav-content1 {
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -15,73 +15,195 @@
     background-color: #46469C;
 }
 
-.Nav-content ul{
-  display: flex;
-  justify-content: space-around;
-  gap: 3.9rem;
+
+.Nav-mobile {
+    display: none;
 }
 
-.Nav-content a:hover{
+.Nav-content1 ul {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-around;
+    gap: 7rem;
+
+
+
+.Nav-content1 a:hover {
     cursor: pointer;
     color: white;
-    
+}
+
+.Nav-content1 img {
+    margin: 1.5rem auto;
+    width: 7rem;
+    height: 5rem;
 }
 
 
-.Nav-content img{
-    
-    padding: 7px 0px 7px 0px;
-    /* width: 6.3rem;
-    height: 5rem; */
-    
-    max-width: 100px;
+.Nav-content1 li {
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    margin: auto auto;
 
-    
 }
 .Nav-content .logo {
     padding-left:50px;
 }
 
-.Nav-content li{
+.Nav-content1  li {
     display: flex;
-   
-    
-    
 }
 
+.logo img:hover {
+    transition: 0.5s;
+    transform: scale(1.3);
+}
 
-.login-name{
+.login-name {
     display: flex;
     justify-content: space-around; 
     align-items: center;
-    /* padding-top: 2rem; */
-    /* padding-right: 0.25rem; */
-    padding-right: 100px;
-    width: 100px;
-    height: auto;
+
+    padding-top: 3rem;
+    padding-right: 0.25rem;
+    width: 20%;
+    height: 5rem;
+
     gap: 0.5rem;
     
 }
 
-
-.login-name button{
+.login-name button {
+    border-radius: 10px;
     justify-content: center;
     text-align: center;
-    width: 4.5rem;
+    width: 6rem;
     height: 3rem;
     padding: 10px 20px 10px 20px;
 }
 
+/* ==================== MEDIA QUERY ================== */
 
-.Nav-content li{
-  list-style: none;
-  justify-content: center;
-  align-items: center;
-  margin: auto auto;
-}
 
-@media only screen and (max-width: 960px) {
-    ul {
-        visibility: hidden;
+@media screen and (max-width :768px) {
+    .Nav-content1 {
+        display: none;
     }
+
+    .Nav-mobile {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 100%;
+        background-color: #46469C;
+    }
+    
+    .logo-mobile{
+        width: 10rem;
+        max-width: 100%;
+    }
+
+    .logo-mobile img {
+        margin: 1rem auto;
+        padding-left: 1rem;
+        width: 9rem;
+        max-width: 100%;
+        height: 70%;
+        max-height: 100%;
+        
+    }
+
+   
+
+    .Nav-ul-mobile ul{
+        width:100%;
+        max-width: 100%;
+        height: 5rem;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 4rem;
+        gap: 1rem;
+    }
+
+ 
+   
+    .Nav-mobile .Nav-ul-mobile li {
+        list-style: none;
+        margin-left: 0;
+        padding-left: 0;
+        width: 10rem;
+        height: 20rem;
+    }
+    
+    .login-name-mobile{
+        display: flex;
+        justify-content: space-between;
+        gap: 1rem;
+        margin-right: 1rem;
+    }
+
+    .login-name-mobile button{
+        margin: 0 auto;
+        width: 4rem;
+        height: 2rem;
+        align-items: center;
+        
+    }
+
+}/* ==================== MEDIA QUERY ================== */
+
+@media screen and (max-width :768px) {
+    .Nav-content1 {
+        display: none;
+    }
+
+    .Nav-mobile{
+    margin: auto;
+    background-color: #46469C;
+    height: 7rem;
+    display: flex;
+    justify-content: space-between;
+    }
+
+    .logo-mobile img{
+    max-width: 100%;
+    }
+
+    .Nav-ui-mobile{
+    max-width: 100%;
+    }
+   .Nav-ui-mobile #myLinks{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding-top: 2rem;
+    padding-right: 3rem;
+    gap: 1.6rem;
+   }
+
+   .Nav-ui-mobile #myLinks .login-name-mobile{
+    margin-left: 2rem; 
+    }
+
+   .Nav-ui-mobile #myLinks img{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 2rem;
+    
+   }
+   .login-name-mobile {
+    padding-top: 0.5rem;
+    max-width: 100%;
+   }
+   .login-name-mobile button{
+    border-radius: 2rem;
+    }
+
+    .login-name-mobile button a{
+    text-decoration: none;
+    }
+  
+
 }
