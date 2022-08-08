@@ -10,7 +10,7 @@
     width: 100%;
     max-width: 100%;
     height: 100%;
-    height: 8rem;
+    height: 7rem;
     max-height: 100%;
     background-color: #46469C;
 }
@@ -33,7 +33,7 @@
 }
 
 .Nav-content1 img {
-    margin: 1.5rem auto;
+    margin: 1.2rem auto;
     width: 7rem;
     height: 5rem;
 }
@@ -45,7 +45,7 @@
     margin: auto auto;
 }
 
-.Nav-content1  li {
+.Nav-content1 li {
     display: flex;
 }
 
@@ -75,122 +75,236 @@
 
 /* ==================== MEDIA QUERY ================== */
 
+@media screen and (max-width :986px) {
+    .Nav-content1 {
+        display: none;
+    }
+
+    .Nav-mobile {
+        margin: auto;
+        background-color: #46469C;
+        height: 6rem;
+        display: flex;
+        
+    }
+
+    .logo-mobile img {
+        height: 5.5rem;
+        width: 5rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+
+    }
+
+    .Nav-ui-mobile {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .Nav-ui-mobile > #myLinks{
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        gap: 3rem;
+        
+    }
+    .Nav-ui-mobile #myLinks img {
+        width: 3rem;
+        height: 4rem;
+        border-radius: 2rem;
+        margin-top: 0.75rem;
+        margin-left: 3.5rem;
+
+    }
+
+    .login-name-mobile {
+        padding-top: 1rem;
+        padding-left: 1rem;
+        max-width: 100%;
+        
+    }
+
+    .login-name-mobile button {
+        border-radius: 0.5rem;
+        height: 4rem;
+        width: 4rem;
+        
+    }
+
+    .login-name-mobile button a {
+        text-decoration: none;
+    }
+}
+
+/* ==================== MEDIA QUERY ================== */
+
+@media screen and (max-width :884px) {
+    .Nav-content1 {
+        display: none;
+    }
+
+    .Nav-mobile {
+        margin: auto;
+        background-color: #46469C;
+        height: 6rem;
+        display: flex;
+        
+    }
+
+    .logo-mobile img {
+        height: 5.5rem;
+        width: 5rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+
+    }
+
+    .Nav-ui-mobile {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .Nav-ui-mobile > #myLinks{
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        gap: 2.5rem;
+        
+    }
+    .Nav-ui-mobile #myLinks img {
+        width: 2.6rem;
+        height: 3rem;
+        border-radius: 2rem;
+        margin-top: 1.35rem;
+        margin-left: 3.5rem;
+
+    }
+
+    .login-name-mobile {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        padding-top: 1.2rem;
+        padding-left: 1rem;
+        margin-right: 1rem;
+        
+        
+    }
+
+    .login-name-mobile button {
+        border-radius: 0.5rem;
+        height: 3rem;
+        width: 4rem;
+        gap: 1rem;
+        
+    }
+
+    .login-name-mobile button a {
+        text-decoration: none;
+    }
+}
+
+/* ==================== MEDIA QUERY ================== */
+
 @media screen and (max-width :768px) {
     .Nav-content1 {
         display: none;
     }
 
     .Nav-mobile {
+        margin: auto;
+        background-color: #46469C;
+        height: 5.5rem;
         display: flex;
         justify-content: space-between;
-        width: 100%;
-        max-width: 100%;
-        background-color: #46469C;
-    }
-    
-    .logo-mobile{
-        width: 10rem;
-        max-width: 100%;
     }
 
     .logo-mobile img {
-        margin: 1rem auto;
-        padding-left: 1rem;
-        width: 9rem;
         max-width: 100%;
-        height: 70%;
-        max-height: 100%;
-        
+        width: 6rem;
+        height: 6rem;
+        padding-left: 0.5rem;
     }
 
-   
 
-    .Nav-ul-mobile ul{
-        width:100%;
-        max-width: 100%;
-        height: 5rem;
-        display: flex;
-        justify-content: space-between;
-        margin-top: 4rem;
-        gap: 1rem;
-    }
-
- 
-   
-    .Nav-mobile .Nav-ul-mobile li {
-        list-style: none;
-        margin-left: 0;
-        padding-left: 0;
-        width: 10rem;
-        height: 20rem;
-    }
-    
-    .login-name-mobile{
-        display: flex;
-        justify-content: space-between;
-        gap: 1rem;
-        margin-right: 1rem;
-    }
-
-    .login-name-mobile button{
-        margin: 0 auto;
-        width: 4rem;
+    .Nav-ui-mobile #myLinks img {
+        width:2.5rem;
         height: 2rem;
-        align-items: center;
-        
+        border-radius: 0.5rem;
+        margin-top: 1.5rem;
+        margin-left: 1.5rem;
+
     }
 
-}/* ==================== MEDIA QUERY ================== */
+    .login-name-mobile {
+        text-align: center;
+        justify-content: center;
+        margin-right: 1rem;
+        padding: 1.55rem 1.98rem;
+        max-width: 100%;
+    }
 
-@media screen and (max-width :768px) {
+    .login-name-mobile button {
+        border-radius: 1rem;
+        width: 3rem;
+        height: 2rem;
+    }
+
+    .login-name-mobile button a {
+        text-decoration: none;
+    }
+
+}
+
+/* ==================== MEDIA QUERY ================== */
+
+@media screen and (max-width :390px) {
     .Nav-content1 {
         display: none;
     }
 
-    .Nav-mobile{
-    margin: auto;
-    background-color: #46469C;
-    height: 7rem;
-    display: flex;
-    justify-content: space-between;
+    .Nav-mobile {
+        margin: auto;
+        background-color: #46469C;
+        height: 5rem;
+        display: flex;
+        justify-content: space-between;
     }
 
-    .logo-mobile img{
-    max-width: 100%;
+    .logo-mobile img {
+        display: none;
     }
 
-    .Nav-ui-mobile{
-    max-width: 100%;
-    }
-   .Nav-ui-mobile #myLinks{
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
-    padding-top: 2rem;
-    padding-right: 3rem;
-    gap: 1.6rem;
-   }
 
-   .Nav-ui-mobile #myLinks .login-name-mobile{
-    margin-left: 2rem; 
+    .Nav-ui-mobile #myLinks {
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        gap: 1rem;
     }
 
-   .Nav-ui-mobile #myLinks img{
-    width: 3rem;
-    height: 3rem;
-    border-radius: 2rem;
-    
-   }
-   .login-name-mobile {
-    padding-top: 0.5rem;
-    max-width: 100%;
-   }
-   .login-name-mobile button{
-    border-radius: 2rem;
+    .Nav-ui-mobile #myLinks img{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        list-style: none;
+        margin-bottom: 2rem;
     }
 
-    .login-name-mobile button a{
-    text-decoration: none;
+    .login-name-mobile {
+        padding-top: 1.3rem;
+        max-width: 100%;
     }
-  
+
+    .login-name-mobile button {
+        border-radius: 2rem;
+    }
+
+    .login-name-mobile button a {
+        text-decoration: none;
+    }
+
 }
