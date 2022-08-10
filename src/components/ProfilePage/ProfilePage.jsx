@@ -7,7 +7,7 @@ import Navbar from "../Navbar/Navbar";
 
 const ProfilePage= () =>{
 
-    const [profileData,setProfileData] = useState({name:"Michael Carrick",age:"20",height:"100",weight:"30",bmi:"16"})
+    const [profileData,setProfileData] = useState({name:"Michael Carrick",age:"20",height:"180",weight:"75",bmi:"19"})
     console.log(profileData)
     return(
         <div>

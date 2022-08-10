@@ -1,12 +1,24 @@
-import React from "react";
+import React, { useState } from "react";
 // import MuiSelect from "./DropDown";
 import CardMyActivites from "../CardMyActivies/CardMyActivies";
 import DropDown from "./DropDown";
-import "./MyActivites.css"
+import "./MyActivites.css";
+
 
 const MyActivites = () => {
-    const textComment = " Simply dummy text of the printing and is simply dummy text of the printing and is simply dummy text of the printing and text of the printing and is simply dummy text of the printing and the printing "
-    const imageComment = "./assert/garden1.jpg"
+
+//     const [listPostData,setListPostData] = useState([
+//         {textComment:" Simply dummy text of the printing and is simply dummy text of the printing and is simply dummy text of the printing and text of the printing and is simply dummy text of the printing and the printing ",
+//     imageComment:"./assert/garden1.jpg",
+//     location:"สวนจตุจักร",
+//     date:"12/05/2022",
+//     time:"08:00",
+//     unitTime : "AM"
+//     },
+// ])
+
+    const textComment=" Simply dummy text of the printing and is simply dummy text of the printing and is simply dummy text of the printing and text of the printing and is simply dummy text of the printing and the printing "
+    const imageComment="./assert/garden1.jpg"
     const location = "สวนจตุจักร"
     const date = "12/05/2022"
     const time = "08:00"
@@ -14,7 +26,8 @@ const MyActivites = () => {
 
 
 
-    console.log(textComment.length)
+
+  
     return (
         
         <div className='show-card-activities'>

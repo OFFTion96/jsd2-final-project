@@ -9,8 +9,12 @@
     
 .h1__weeks {
     display: flex;
-    width: 100%;
-    justify-content: space-around;
+    /* width: 100%;
+    max-width: 798px; */
+    width:70%;
+    max-width: 798px;
+    min-width: 350px;
+    justify-content: space-between;
     /* background-color: blue; */
     /* gap: 50px; */
     align-items: center;

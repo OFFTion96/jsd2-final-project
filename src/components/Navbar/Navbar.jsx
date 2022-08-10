@@ -3,11 +3,21 @@ import './Navbar.css';
 import {useState} from 'react'
 function Navbar() {
     const [tabMobile,setTabMobile] = useState(false)
+    const [showNavbar,setShowNavbar] = useState(true)
     const toggleMobile=()=>{
         setTabMobile(!tabMobile)
     }
+    const setNavBar = ()=>{
+        
+        if(window.scrollY >=100){
+            setShowNavbar(false)
+        } else {
+            setShowNavbar(true)
+        }
+    }
+    window.addEventListener('scroll',setNavBar)
     return (
-        <div className="Nav-content">
+        <div className={showNavbar ? 'Nav-content':'Nav-content hide'}>
             <div className="Nav-content1">
                 <div className="logo">
                     <a href="#home"><img src="/images/logo-removebg-preview.png" /></a>
@@ -33,14 +43,14 @@ function Navbar() {
                 <div className={tabMobile ? "tab-mobile active":"tab-mobile"}>
                     <div className="container-mobile">
                         <div className="mobile-login-name">
-                            <button><i class="fa-solid fa-right-to-bracket"></i><a id='#' className="sign-in">Sign in</a></button>
-                            <button><i class="fa-solid fa-user-plus"></i><a id='#' className="sign-up">Sign up</a></button>
+                            <button onClick={toggleMobile}><i class="fa-solid fa-right-to-bracket"></i><a id='#' className="sign-in">Sign in</a></button>
+                            <button onClick={toggleMobile}><i class="fa-solid fa-user-plus"></i><a id='#' className="sign-up">Sign up</a></button>
                         </div>
                         <div className = "mobile-ul">
                             <ul className="mobile-nav-ul">
-                                <li>Community</li>
-                                <li>Add Post</li>
-                                <li>My Activities</li>
+                                <li onClick={toggleMobile}>Community</li>
+                                <li onClick={toggleMobile}>Add Post</li>
+                                <li onClick={toggleMobile}>My Activities</li>
                                 
                             </ul>
                         </div>

@@ -11,7 +11,7 @@
     height: 100px;
     justify-content: space-between;
     flex-direction: row;
-   align-items: center;
+    align-items: center;
     
 }
 
@@ -38,7 +38,7 @@
     background-color: #46469C;
     padding: 10px 10px 10px 10px;
     border-radius: 1.5rem;
-    margin-left:5rem;
+    margin-left:3rem;
     color: white;
     list-style: none;
     font-size: 1.2rem;
@@ -134,6 +134,7 @@
     font-size: 30px;
     color: #ffffff;
     margin-right: 30px;
+    cursor: pointer;
 }
 
 .tab-mobile{
@@ -142,8 +143,8 @@
     background-color: #46469C;
     position: absolute;
     right: -100%;
-    top:100px;
-    transition: 350ms
+    top:80px;
+    transition: 300ms
 }
 
 .tab-mobile.active {
@@ -152,14 +153,17 @@
     background-color: #46469C;
     position: absolute;
     right: 0;
-    top:100px;
-    transition: 850ms
+    top:80px;
+    transition: 800ms;
+    border-radius: 20px;
+    
 }
 
 .container-mobile {
     display: flex;
     flex-direction: column;
     align-items: center;
+    
 }
 .mobile-login-name {
     display: flex;
@@ -205,6 +209,12 @@
     color: rgb(0, 0, 0);
 }
 
+.Nav-content.hide{
+
+    display: none;
+    
+}
+
 
 /* ==================== MEDIA QUERY ================== */
 @media screen  and (min-width: 987px){
@@ -213,7 +223,7 @@
     }
 }
 
-@media screen and (max-width :986px) {
+@media screen and (max-width :987px) {
     .ul,.login-name {
         display: none;
     }
