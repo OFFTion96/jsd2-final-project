@@ -16,16 +16,12 @@ const MyActivites = () => {
 
     console.log(textComment.length)
     return (
+        
         <div className='show-card-activities'>
-
-
             <div className="h1__weeks">
                 <h1>My Activities</h1>
                 <DropDown />
             </div>
-            
-
-
             <CardMyActivites textComment={textComment} imageComment={imageComment} location={location}
                 date={date} time={time} unitTime={unitTime} />
             <CardMyActivites />

@@ -11,12 +11,11 @@ const DropDown = () => {
     <div class="dropdown">
       <button class="dropbtn">Week {selectWeek}</button>
       <div class="dropdown-content">
-        <a href="#" onClick={() => {setSelectWeek(() => setSelectWeek(1))}}>Weeks 1</a>
-        <a href="#" onClick={() => {setSelectWeek(() => setSelectWeek(2))}}>Weeks 2</a> 
-        <a href="#" onClick={() => {setSelectWeek(() => setSelectWeek(3))}}>Weeks 3</a>
-        <a href="#" onClick={() => {setSelectWeek(() => setSelectWeek(4))}}>Weeks 4</a>
-        <a href="#" onClick={() => {setSelectWeek(() => setSelectWeek(5))}}>Weeks 5</a>
-        <a href="#" onClick={() => {setSelectWeek(() => setSelectWeek(6))}}>Weeks 6</a>
+         <a href="#" onClick={()=>setSelectWeek(1)}>Week 1</a>
+         <a href="#" onClick={()=>setSelectWeek(2)}>Week 2</a>
+         <a href="#" onClick={()=>setSelectWeek(3)}>Week 3</a>
+         <a href="#" onClick={()=>setSelectWeek(4)}>Week 4</a>
+
       </div>
     </div>
   );
