@@ -4,81 +4,119 @@
     box-sizing: border-box;
 }
 
-.Nav-content1 {
+.Nav-content{
+    display: flex;
+    background-color: #46469C;
+    width: 100%;
+    height: 100px;
+    justify-content: space-between;
+    flex-direction: row;
+   align-items: center;
+    
+}
+
+/* .Nav-content1 {
     display: flex;
     justify-content: space-between;
     width: 100%;
     height: 100%;
     height: 7rem;
-    /* height: 8rem; */
-    /* height: 8rem; */
+
+    height: 8rem;
+    height: 8rem;
     max-height: 100%;
     background-color: #46469C;
+} */
+.Nav-ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+
 }
+.Nav-ul li {
+    background-color: #46469C;
+    padding: 10px 10px 10px 10px;
+    border-radius: 1.5rem;
+    margin-left:5rem;
+    color: white;
+    list-style: none;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    font-weight: 600;
+    cursor: pointer;
+
+}
+
+.Nav-ul li:hover{
+    background-color: #fab869;
+    color: rgb(0, 0, 0);
+}
+
+
+
+
     
 
 
-
-    
-
-
-.Nav-mobile {
+/* .Nav-mobile {
     display: none;
-}
+} */
 
-.Nav-content1 ul {
+/* .Nav-content1 ul {
     width: 100%;
     max-width: 100%;
     display: flex;
     justify-content: space-around;
     gap: 7rem;
-}
+} */
 
 
-.Nav-content1 a:hover {
+.login-name :hover {
     cursor: pointer;
     color: white;
+    background-color: #fab869;
 }
 
 .Nav-content1 img {
     margin: 1.2rem auto;
-    width: 7rem;
-    height: 5rem;
+    width: 6rem;
+    height: auto;
 }
 
 
-.Nav-content1 li {
+/* .Nav-content1 li {
     list-style: none;
     justify-content: center;
     align-items: center;
     margin: auto auto;
 
-}
+} */
 .Nav-content .logo {
-    padding-left:50px;
+    padding-left:25px;
 }
 
-.Nav-content1 li {
+/* .Nav-content1 li {
     display: flex;
-}
+} */
 
 .logo img:hover {
     transition: 0.5s;
-    transform: scale(1.3);
+    transform: scale(1.1);
 }
 
 .login-name {
-    display: flex;
-    justify-content: space-around; 
-    align-items: center;
-
-    padding-top: 3rem;
-    padding-right: 0.25rem;
-    width: 20%;
-    height: 5rem;
-
-    gap: 0.5rem;
+    /* margin: 1.5em; */
+    /* padding-right: 30px; */
+    padding-right: 25px;
     
+}
+.login-name a {
+    font-weight: 600
+}
+.login-name i {
+    font-size: 15px;
+    margin-right: 5px;
 }
 
 .login-name button {
@@ -87,18 +125,101 @@
     text-align: center;
     width: 6rem;
     height: 3rem;
-    padding: 10px 20px 10px 20px;
+    padding: 10px 10px 10px 10px;
+    background-color: #F2A950;
+    margin-right: 5px;
+}
+
+.toggle-bar i{
+    font-size: 30px;
+    color: #ffffff;
+    margin-right: 30px;
+}
+
+.tab-mobile{
+    width:50%;
+    height: 500px;
+    background-color: #46469C;
+    position: absolute;
+    right: -100%;
+    top:100px;
+    transition: 350ms
+}
+
+.tab-mobile.active {
+    width:50%;
+    height: 500px;
+    background-color: #46469C;
+    position: absolute;
+    right: 0;
+    top:100px;
+    transition: 850ms
+}
+
+.container-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.mobile-login-name {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.mobile-login-name button {
+    border-radius: 10px;
+    justify-content: center;
+    text-align: center;
+    width: 8em;
+    height: 3rem;
+    padding: 10px 10px 10px 10px;
+    background-color: #F2A950;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+}
+.mobile-login-name i {
+   margin-right: 10px;
+}
+.mobile-login-name :hover {
+    cursor: pointer;
+    color: white;
+    background-color: #fab869;
+}
+.mobile-nav-ul li {
+    background-color: #46469C;
+    padding: 10px 10px 10px 10px;
+    border-radius: 1.5rem;
+    margin-top: 20px;
+    color: white;
+    list-style: none;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    font-weight: 600;
+    cursor: pointer;
+ 
+}
+.mobile-nav-ul li:hover {
+    background-color: #fab869;
+    color: rgb(0, 0, 0);
 }
 
 
 /* ==================== MEDIA QUERY ================== */
-
-
-@media screen and (max-width :986px) {
-    .Nav-content1 {
+@media screen  and (min-width: 987px){
+    .nav-mobile{
         display: none;
     }
+}
 
+@media screen and (max-width :986px) {
+    .ul,.login-name {
+        display: none;
+    }
+}
+
+/*
     .Nav-mobile {
         margin: auto;
         background-color: #46469C;
@@ -158,7 +279,7 @@
 }
 
 /* ==================== MEDIA QUERY ================== */
-
+/* 
 @media screen and (max-width :884px) {
     .Nav-content1 {
         display: none;
@@ -225,12 +346,12 @@
     .login-name-mobile button a {
         text-decoration: none;
     }
-}
+} */
 
 /* ==================== MEDIA QUERY ================== */
 
 
-
+/* 
 @media screen and (max-width :768px) {
     .Nav-content1 {
         display: none;
@@ -279,11 +400,11 @@
         text-decoration: none;
     }
 
-}
+} */
 
 /* ==================== MEDIA QUERY ================== */
 
-@media screen and (max-width :390px) {
+/* @media screen and (max-width :390px) {
     .Nav-content1 {
         display: none;
     }
@@ -332,4 +453,4 @@
   
 
 
-}
+}  */

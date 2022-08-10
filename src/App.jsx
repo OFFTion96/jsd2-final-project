@@ -1,13 +1,13 @@
-
-
 import './App.css'
 import ProfilePage from './components/ProfilePage/ProfilePage'
-function App() {
+import { BrowserRouter as Router,Routes,Route } from "react-router-dom";
 
+function App() {
+  
 
 return (
     <div className="App">
-     
+      
       <ProfilePage />
     
     </div>
