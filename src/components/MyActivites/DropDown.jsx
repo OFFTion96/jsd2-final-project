@@ -1,16 +1,7 @@
 import React from 'react';
 import './DropDown.css';
 import { useState } from 'react';
-// import {DropDownListComponent} from '@syncfusion/ej2-react-dropdowns';
-// import './DropDown.css';
 
-
-// To bind JSON object
-// const sportsData:{ [key: string]: Object }[] = [
-//   { Id: 'game1', Game: 'Badminton' },
-//   { Id: 'game2', Game: 'Football' },
-//   { Id: 'game3', Game: 'Tennis' }
-// ];
 
 const DropDown = () => {
   const [selectWeek,setSelectWeek] = useState(1)
