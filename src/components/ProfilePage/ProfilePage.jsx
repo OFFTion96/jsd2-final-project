@@ -30,8 +30,8 @@ const ProfilePage= () =>{
                     
                 </div>
                 <div className="my-activity">
+                 
                     <MyActivites />
-                    
                 </div>
 
             </div>
