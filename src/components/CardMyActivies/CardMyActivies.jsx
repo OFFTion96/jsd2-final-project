@@ -1,18 +1,18 @@
 import './CardMyActivites.css'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
 
 
 const CardMyActivites = (props) => {
-    console.log(props.imageComment)
+    
     return(
         <div className="card">
             <div className='gird-container'>
                 <div className="header-comment">
-                    <div className = "button-edit">
+                    <div className = "button-edit" onClick={()=>props.updateItem(props.id)}>
                         <i class="fas fa-pen"></i>
                         <span>Edit</span>
                     </div>
-                    <div className = "button-delete">
+                    <div className = "button-delete" onClick={()=>props.removeItem(props.id)}>
                         <i class="fas fa-trash-alt"></i>
                         <span>Delete</span>
                     </div>
@@ -39,7 +39,7 @@ const CardMyActivites = (props) => {
                    
                 </div>
                 <div className="image-comment">
-                    <img src="./assert/garden1.jpg" />
+                    <img src={props.imageComment} />
                     
                 </div>
             </div>
