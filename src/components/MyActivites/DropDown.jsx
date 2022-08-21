@@ -3,18 +3,18 @@ import './DropDown.css';
 import { useState } from 'react';
 
 
-const DropDown = () => {
-  const [selectWeek,setSelectWeek] = useState(1)
+const DropDown = (props) => {
+  // const [selectWeek,setSelectWeek] = useState(1)
 
 
   return (
     <div class="dropdown">
-      <button class="dropbtn">Week {selectWeek}</button>
+      <button class="dropbtn">Week {props.weekNo}</button>
       <div class="dropdown-content">
-         <a href="#" onClick={()=>setSelectWeek(1)}>Week 1</a>
-         <a href="#" onClick={()=>setSelectWeek(2)}>Week 2</a>
-         <a href="#" onClick={()=>setSelectWeek(3)}>Week 3</a>
-         <a href="#" onClick={()=>setSelectWeek(4)}>Week 4</a>
+         <a href="#" onClick={()=>props.selectWeek(1)}>Week 1</a>
+         <a href="#" onClick={()=>props.selectWeek(2)}>Week 2</a>
+         <a href="#" onClick={()=>props.selectWeek(3)}>Week 3</a>
+         <a href="#" onClick={()=>props.selectWeek(4)}>Week 4</a>
 
       </div>
     </div>

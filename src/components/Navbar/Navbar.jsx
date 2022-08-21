@@ -9,7 +9,7 @@ function Navbar() {
     }
     const setNavBar = ()=>{
         
-        if(window.scrollY >=100){
+        if(window.scrollY >=200){
             setShowNavbar(false)
         } else {
             setShowNavbar(true)
@@ -33,8 +33,8 @@ function Navbar() {
             </div>
          
             <div className="login-name">
-                    <button><a id='#' className="sign-in"><i class="fa-solid fa-right-to-bracket"></i>Sign in</a></button>
-                    <button><a id='#' className="sign-up"><i class="fa-solid fa-user-plus"></i>Sign up</a></button>
+                    <button><a id='#' className="sign-in"><i className="fa-solid fa-right-to-bracket"></i>Sign in</a></button>
+                    <button><a id='#' className="sign-up"><i className="fa-solid fa-user-plus"></i>Sign up</a></button>
             </div>
             <div className="nav-mobile">
                 <div className="toggle-bar">
@@ -43,8 +43,8 @@ function Navbar() {
                 <div className={tabMobile ? "tab-mobile active":"tab-mobile"}>
                     <div className="container-mobile">
                         <div className="mobile-login-name">
-                            <button onClick={toggleMobile}><i class="fa-solid fa-right-to-bracket"></i><a id='#' className="sign-in">Sign in</a></button>
-                            <button onClick={toggleMobile}><i class="fa-solid fa-user-plus"></i><a id='#' className="sign-up">Sign up</a></button>
+                            <button onClick={toggleMobile}><i className="fa-solid fa-right-to-bracket"></i><a id='#' className="sign-in">Sign in</a></button>
+                            <button onClick={toggleMobile}><i className="fa-solid fa-user-plus"></i><a id='#' className="sign-up">Sign up</a></button>
                         </div>
                         <div className = "mobile-ul">
                             <ul className="mobile-nav-ul">
