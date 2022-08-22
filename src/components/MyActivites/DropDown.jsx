@@ -17,9 +17,9 @@ const DropDown = () => {
 
 
   return (
-    <div class="dropdown">
-      <button class="dropbtn">Week {selectWeek}</button>
-      <div class="dropdown-content">
+    <div className="dropdown">
+      <button className="dropbtn">Week {selectWeek}</button>
+      <div className="dropdown-content">
         <a href="#" onClick={() => {setSelectWeek(() => setSelectWeek(1))}}>Weeks 1</a>
         <a href="#" onClick={() => {setSelectWeek(() => setSelectWeek(2))}}>Weeks 2</a> 
         <a href="#" onClick={() => {setSelectWeek(() => setSelectWeek(3))}}>Weeks 3</a>
