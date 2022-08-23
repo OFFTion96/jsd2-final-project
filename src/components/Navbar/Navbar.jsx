@@ -1,5 +1,6 @@
 import React from "react";
 import './Navbar.css';
+
 import { useState, useEffect } from 'react';
 import Login from '../Login/Login';
 import Logout from "../Logout/Logout";
@@ -32,6 +33,8 @@ function Navbar() {
     const setNavBar = () => {
 
         if (window.scrollY >= 200) {
+
+
             setShowNavbar(false)
         } else {
             setShowNavbar(true)
@@ -43,9 +46,11 @@ function Navbar() {
 
 
 
+
     window.addEventListener('scroll', setNavBar)
     return (
         <div className={showNavbar ? 'Nav-content' : 'Nav-content hide'}>
+
             <div className="Nav-content1">
                 <div className="logo">
                     <a href="#home"><img src="/images/logo-removebg-preview.png" /></a>
@@ -59,6 +64,37 @@ function Navbar() {
 
                 </ul>
             </div>
+         
+            <div className="login-name">
+                    <button><a id='#' className="sign-in"><i className="fa-solid fa-right-to-bracket"></i>Sign in</a></button>
+                    <button><a id='#' className="sign-up"><i className="fa-solid fa-user-plus"></i>Sign up</a></button>
+            </div>
+            <div className="nav-mobile">
+                <div className="toggle-bar">
+                    <i class="fa-solid fa-bars" onClick={toggleMobile}></i>
+                </div>
+                <div className={tabMobile ? "tab-mobile active":"tab-mobile"}>
+                    <div className="container-mobile">
+                        <div className="mobile-login-name">
+                            <button onClick={toggleMobile}><i className="fa-solid fa-right-to-bracket"></i><a id='#' className="sign-in">Sign in</a></button>
+                            <button onClick={toggleMobile}><i className="fa-solid fa-user-plus"></i><a id='#' className="sign-up">Sign up</a></button>
+                        </div>
+                        <div className = "mobile-ul">
+                            <ul className="mobile-nav-ul">
+                                <li onClick={toggleMobile}>Community</li>
+                                <li onClick={toggleMobile}>Add Post</li>
+                                <li onClick={toggleMobile}>My Activities</li>
+                                
+                            </ul>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+            </div>
+            
+        </div>
+
 
 
 
@@ -117,6 +153,7 @@ function Navbar() {
 
 
 
+
                         </div>
                         <div className="mobile-ul">
                             <ul className="mobile-nav-ul">
@@ -127,12 +164,14 @@ function Navbar() {
                             </ul>
                         </div>
 
+
                     </div>
                 </div>
 
             </div>
 
-        </div>
+
+        // {/* </div> */}
 
         //     // {/* ===================================MEDIA QUERY========================================== */}
 

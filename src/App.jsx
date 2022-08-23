@@ -1,9 +1,12 @@
 import './App.css'
-// import MuiSelect from './components/MyActivites/MuiSelect';
-import ProfilePage from './components/ProfilePage/ProfilePage';
+import ProfilePage from './components/ProfilePage/ProfilePage'
+
+import { BrowserRouter as Router,Routes,Route } from "react-router-dom";
+
+
 
 function App() {
-
+  
 
 return (
     <div className="App">
