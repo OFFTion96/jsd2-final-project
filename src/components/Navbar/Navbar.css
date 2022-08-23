@@ -48,7 +48,7 @@
 }
 
 .Nav-ul li:hover{
-    background-color: #fab869;
+    background-color: transparent;
     color: rgb(0, 0, 0);
 }
 
@@ -74,7 +74,7 @@
 .login-name :hover {
     cursor: pointer;
     color: white;
-    background-color: #fab869;
+    background-color: transparent;
 }
 
 .Nav-content1 img {
@@ -143,7 +143,6 @@
 .tab-mobile{
     width:50%;
     padding-bottom: 24px;
-    /* height: 500px; */
     background-color: #46469C;
     position: absolute;
     right: -100%;
@@ -153,7 +152,6 @@
 
 .tab-mobile.active {
     width:50%;
-    height: 500px;
     background-color: #46469C;
     position: absolute;
     right: 0;
@@ -193,7 +191,7 @@
 .mobile-login-name :hover {
     cursor: pointer;
     color: white;
-    background-color: #fab869;
+    background-color: #F2A950;
 }
 .mobile-nav-ul li {
     background-color: #46469C;

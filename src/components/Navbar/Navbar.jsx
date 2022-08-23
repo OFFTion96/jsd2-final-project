@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import Login from '../Login/Login';
 import Logout from "../Logout/Logout";
 import Login_user from "../Login/Login_user";
+import { color } from "@mui/system";
 
 function Navbar() {
     const [tabMobile, setTabMobile] = useState(false)
@@ -64,7 +65,11 @@ function Navbar() {
             <div className="login-name">
                 {showLogin ? (<div><button onClick={handleClick}><a id='#' className="sign-in"><i className="fa-solid fa-right-to-bracket"></i>Sign in</a></button>
                     <button><a id='#' className="sign-up"><i className="fa-solid fa-user-plus"></i>Sign up</a></button></div>) :
-                    <div className="Show__login__complete"><Login /><Login_user /><button onClick={handleClick}>Log out </button></div>}
+                    <div className="Show__login__complete"><Login />
+                    <div >
+                    <Login_user  />
+                    </div>
+                    <button onClick={handleClick}>Log out </button></div>}
             </div>
 
 
@@ -82,7 +87,7 @@ function Navbar() {
                             {showLogin ?
                                 (
                                     <div>
-                                        <div>
+                                        <div >
                                             <button onClick={() => {
                                                 toggleMobile();
                                                 setshowLogin(false)
@@ -99,7 +104,7 @@ function Navbar() {
                                     <div>
                                         <Login />
                                     </div>
-                                    <div style={{ marginTop: 8, marginBottom: 8 }}>
+                                    <div style={{ marginTop: 8, marginBottom: 5 }}>
                                         <Login_user color="white" />
                                     </div>
                                     <div style={{ textAlign: 'center' }}>
