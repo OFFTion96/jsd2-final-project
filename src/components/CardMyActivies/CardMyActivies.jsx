@@ -8,12 +8,14 @@ const CardMyActivites = (props) => {
         <div className="card">
             <div className='gird-container'>
                 <div className="header-comment">
+
                     <div className = "button-edit" onClick={()=>props.updateItem(props.id)}>
                         <i class="fas fa-pen"></i>
                         <span>Edit</span>
                     </div>
                     <div className = "button-delete" onClick={()=>props.removeItem(props.id)}>
                         <i class="fas fa-trash-alt"></i>
+
                         <span>Delete</span>
                     </div>
                     
@@ -24,7 +26,7 @@ const CardMyActivites = (props) => {
                     </div>
                     <div className="footer-cooment">
                         <div className="location">
-                            <span><i class="fas fa-map-marker-alt"></i></span>
+                            <span><i className="fas fa-map-marker-alt"></i></span>
                             <p>{props.location}</p>
                         </div>
                         <div className="posted-date">
